@@ -72,6 +72,10 @@ class App extends React.Component {
                             Для облегчения тестирования можно использовать картинку <Text weight="semibold">https://service.pavel.im/image</Text> (good code — все круто, bad code — сервер получил параметры запуска)
 						</Div>
 
+                        <Div>
+                            Ошибка возникала из-за передачи заголовка referer, содержащего информацию о пользователе. Была исправлена путем добавления meta тега.
+                        </Div>
+
                         <FormLayout>
                             <Input type="text" id="url" />
 
